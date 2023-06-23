@@ -1,0 +1,14 @@
+section{
+    padding: 55px 20px;
+}
+.section{
+    &--white{
+        background-color: white;
+    }
+    &--darkgrey{
+        background-color: $grey2;
+    }
+    &--grey{
+        background-color: $background;
+    }
+}
