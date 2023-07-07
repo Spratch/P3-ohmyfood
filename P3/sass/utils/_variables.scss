@@ -5,4 +5,17 @@ $blue2: #003A68;
 $primary: #9356DC;
 
 $background: #F6F6F6;
-$grey2: #EAEAEA
+$grey: #353535;
+$grey2: #EAEAEA;
+
+$button-gradient: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+
+$breakpoints: (
+ desktop: 1080px
+);
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}

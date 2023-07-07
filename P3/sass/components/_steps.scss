@@ -1,6 +1,10 @@
 .fonctionnement__steps{
     display: flex;
     flex-direction: column;
+    @include desktop{
+        flex-direction: row;
+        gap: 37px;
+    }
 }
 .fonctionnement-step{
     padding: 30px 35px;

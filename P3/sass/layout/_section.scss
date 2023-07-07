@@ -4,11 +4,21 @@ section{
 .section{
     &--white{
         background-color: white;
+        @include desktop{
+            padding: 50px;
+        }
     }
     &--darkgrey{
         background-color: $grey2;
     }
     &--grey{
         background-color: $background;
+        @include desktop{
+            padding: 30px;
+        }
+    }
+    @include desktop{
+        padding-right: 180px !important;
+        padding-left: 180px !important;
     }
 }

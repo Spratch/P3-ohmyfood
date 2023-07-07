@@ -1,0 +1,19 @@
+.footer{
+    background-color: $grey;
+    padding: 22px 25px;
+    color: white;
+    &__logo{
+        height: 27px;
+        margin-bottom: 16px;
+    }
+    &-menu__item{
+        list-style: none;
+        & a{
+            display: flex;
+            gap: 10px;    
+        }
+    }
+    @include desktop{
+        padding: 30px;
+    }
+}

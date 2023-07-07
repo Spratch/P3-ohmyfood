@@ -1,7 +1,11 @@
 .hero{
-    padding: 35px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    @include desktop{
+        gap: 18px;
+        padding: 30px;
+    }
 }
