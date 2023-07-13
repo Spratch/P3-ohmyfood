@@ -46,11 +46,22 @@
     }
     &__like{
         font-size: 23px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         & .fa-heart{
+            position: absolute;
             &.fa-solid{
                 background: $button-gradient;
+                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                opacity: 0;
+                transition: all 200ms ease-in-out;
+                &:hover{
+                    opacity: 1;
+                }
             }
             &.fa-regular{
                 color: #101010;

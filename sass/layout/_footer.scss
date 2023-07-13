@@ -6,6 +6,14 @@
         height: 27px;
         margin-bottom: 16px;
     }
+    &__menu{
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            line-height: 2em;
+        }
+    }
     &-menu__item{
         list-style: none;
         & a{
@@ -13,7 +21,13 @@
             gap: 10px;    
         }
     }
+    & .fa-solid{
+        color: #ffffff;
+    }
     @include desktop{
         padding: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
     }
 }

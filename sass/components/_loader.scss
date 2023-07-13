@@ -1,0 +1,42 @@
+.loader{
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    &__logo{
+        height: 100dvh;
+    }
+    &-logo{
+        position: absolute;
+        animation: loader 3000ms cubic-bezier(0.74, -0.17, 0.4, 1.13) infinite;
+        &--oh{
+            animation-delay: 0ms;
+        }
+        &--my{
+            animation-delay: 500ms;
+        }
+        &--food{
+            animation-delay: 1000ms;
+        }
+    }
+    display: none;
+}
+
+@keyframes loader {
+    0%{
+        transform: translateY(150dvh);
+    }
+    30%{
+        transform: translateY(0dvh);
+    }
+    70%{
+        transform: translateY(0dvh);
+    }
+    100%{
+        transform: translateY(-150dvh);
+    }
+}
