@@ -346,7 +346,8 @@ section {
   flex-direction: column;
   gap: 12px;
   width: 100%;
-  animation: menu-intro 2000ms;
+  animation: menu-intro 2000ms forwards;
+  opacity: 0;
 }
 .menu-sect__title {
   font-weight: 300;

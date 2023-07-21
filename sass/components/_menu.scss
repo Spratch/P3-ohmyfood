@@ -35,7 +35,8 @@
             }
         }
     }
-    animation: menu-intro 2000ms;
+    animation: menu-intro 2000ms forwards;
+    opacity: 0;
     &--starter{
         animation-delay: 0ms;
     }
