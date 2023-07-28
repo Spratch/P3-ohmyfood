@@ -63,11 +63,27 @@ body {
   justify-content: center;
   align-content: center;
   background-color: white;
+  position: relative;
 }
 @media screen and (min-width: 1080px) {
   .header {
     padding: 30px;
     height: 96px;
+  }
+}
+.header .fa-arrow-left {
+  position: absolute;
+  color: black;
+  left: 15px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
+@media screen and (min-width: 1080px) {
+  .header .fa-arrow-left {
+    left: 30px;
   }
 }
 
@@ -409,15 +425,24 @@ section {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 80%;
 }
 .menu-item__name {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
 }
 .menu-item__description {
   font-size: 15px;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
 }
 .menu-item__price {
   font-size: 15px;
@@ -459,9 +484,22 @@ section {
   width: 100%;
   z-index: -1;
   position: relative;
+  max-height: 275px;
 }
 .background__img {
   width: 100%;
+}
+@media screen and (min-width: 1080px) {
+  .background {
+    max-height: 380px;
+  }
+}
+
+.content {
+  background-color: white;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -476,6 +514,12 @@ section {
   gap: 40px;
   align-items: center;
 }
+@media screen and (min-width: 1080px) {
+  .container {
+    max-width: 1055px;
+    padding: 50px 210px;
+  }
+}
 
 .restaurant-title {
   display: flex;
@@ -487,6 +531,12 @@ section {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   margin-bottom: 0;
+}
+@media screen and (min-width: 1080px) {
+  .restaurant-title {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
